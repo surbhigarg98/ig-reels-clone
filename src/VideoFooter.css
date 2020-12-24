@@ -1,0 +1,62 @@
+.videoFooter {
+  position: relative;
+  bottom: 70px;
+  margin-left: 10px;
+}
+.videoFooter_text {
+  position: absolute;
+  color: white;
+  bottom: 0;
+  display: flex;
+  margin-bottom: 10px;
+}
+.videoFooter_text > h5 {
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+.videoFooter_text > h5 > button {
+  color: white;
+  font-weight: 900;
+  text-transform: inherit;
+}
+.videoFooter__ticker > .ticker {
+  height: fit-content;
+  width: 60%;
+  margin-left: 30px;
+}
+.videoFooter__ticker h1 {
+  font-size: 12px;
+  color: white;
+}
+.music__icon {
+  position: absolute;
+  color: white;
+  left: 5px;
+  height: 18px !important;
+  font-weight: bolder !important;
+  font-size: 12px;
+}
+.videoFooter__actions {
+  position: absolute;
+  width: 95%;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  bottom: -40px !important;
+  left: -2px;
+}
+.videoFooter__actionsLeft > .MuiSvgIcon-root {
+  padding: 0 5px;
+}
+
+.videoFooter__stats {
+  display: flex;
+  align-items: center;
+  margin-right: 4px;
+}
+.videoFooter__stats p {
+  margin-left: 3px;
+}
+.MuiSvgIcon-root {
+  font-size: 1.2rem !important;
+}

@@ -1,38 +1,41 @@
+html {
+  scroll-snap-type: y mandatory; /*for snapping scroling functionality*/
+}
 .App {
+  display: grid;
+  place-items: center; /*because of grid it will ccenter the content both horizontally and vertically*/
+  height: 100vh;
+  background-color: black;
+}
+.app__logo {
+  object-fit: contain;
+  width: 100%;
+  height: 12vh;
+}
+.app__top > h1 {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.app__top {
+  margin-bottom: -80px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.app__videos {
+  position: relative;
+  height: 65vh;
+  width: 60%;
+  background-color: white;
+  max-height: 1200px;
+  max-width: 350px;
+  border-radius: 20px;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+}
+/* hide scrollbar for chroe,safri,opera */
+.app__videos::-webkit-scrollbar {
+  display: none;
+}
+/* hide scrollbar for IE,Edge and forefox */
+.app__videos {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

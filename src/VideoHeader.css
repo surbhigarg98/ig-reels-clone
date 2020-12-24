@@ -1,0 +1,15 @@
+.videoHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%; /*when you use position asolute witth flexbox always set with to 100%*/
+  color: white;
+}
+.videoHeader > * {
+  /*by this we give each child having this class a padding individually*/
+  padding: 10px;
+}
+.videoFooter__actionsRight {
+  display: flex;
+}
